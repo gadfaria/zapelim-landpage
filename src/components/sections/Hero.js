@@ -60,8 +60,8 @@ const Hero = ({
               className="mt-0 mb-16 reveal-from-bottom"
               data-reveal-delay="200"
             >
-              Bot
-              <span className="text-color-primary">Zap</span>
+              WhatsApp 
+              <span className="text-color-primary"> Bot</span>
             </h1>
             <div className="container-xs">
               <p
