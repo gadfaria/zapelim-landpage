@@ -50,8 +50,7 @@ const FeaturesSplit = ({
 
   const sectionHeader = {
     title: "Facilidade e agilidade",
-    paragraph:
-      "Simples para o usuário e para você",
+    paragraph: "Simples para o usuário e para você",
   };
 
   return (
@@ -68,9 +67,11 @@ const FeaturesSplit = ({
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   CHATBOT
                 </div>
-                <h3 className="mt-0 mb-12">Oque é um chatbot?</h3>
+                <h3 className="mt-0 mb-12">O que é um chatbot?</h3>
                 <p className="m-0">
-                  Chatbot é um software que simula uma conversa humana, gerenciando as trocas de mensagem entre o cliente e a empresa.
+                  Chatbot é um software que simula uma conversa humana,
+                  gerenciando as trocas de mensagens entre o cliente e o
+                  colaborador.
                 </p>
               </div>
               <div
@@ -95,14 +96,40 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Lightning fast workflow
+                  FUNCIONAMENTO
                 </div>
-                <h3 className="mt-0 mb-12">Data-driven insights</h3>
+                <h3 className="mt-0 mb-12">Como funciona?</h3>
+                <p className="m-0">NÃO SEI OQUE ESCREVER AQUI</p>
+              </div>
+              <div
+                className={classNames(
+                  "split-item-image center-content-mobile reveal-from-bottom",
+                  imageFill && "split-item-image-fill"
+                )}
+                data-reveal-container=".split-item"
+              >
+                <div width={400} height={200}>
+                  <Image
+                    src={require("./../../assets/images/maozinhaa.png")}
+                    alt="Features split 02"
+                    width={528}
+                    height={396}
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="split-item">
+              <div
+                className="split-item-content center-content-mobile reveal-from-right"
+                data-reveal-container=".split-item"
+              >
+                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                  VALOR
+                </div>
+                <h3 className="mt-0 mb-12">E quanto custa?</h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  — Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Como cada colaborador tem suas necessidades, o valor do WhatsBot será baseado em sua demanda.
                 </p>
               </div>
               <div
@@ -113,7 +140,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require("./../../assets/images/mobile_service.svg")}
+                  src={require("./../../assets/images/price.svg")}
                   alt="Features split 02"
                   width={528}
                   height={396}
