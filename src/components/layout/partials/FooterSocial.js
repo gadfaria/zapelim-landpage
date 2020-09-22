@@ -61,7 +61,6 @@ const FooterSocial = ({ className, ...props }) => {
             </svg>
           </a>
         </li>
-
       </ul>
     </div>
   );
