@@ -23,7 +23,8 @@ fieldset {
 .form-radio input {
 	-moz-appearance: none;
 	-webkit-appearance: none;
-	background-color: color-bg(input);
+	// background-color: color-bg(input);
+	background-color: rgb(238, 238, 238);
 	border-width: $button-form--border-width;
 	border-style: $button-form--border-style;
 	border-color: color-border(input);

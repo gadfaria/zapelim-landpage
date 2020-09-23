@@ -77,6 +77,7 @@ const Input = ({
         className={wrapperClasses}
       >
         <Component
+        style={{color:"blue"}}
           {...props}
           type={type !== 'textarea' ? type : null}
           className={classes}
