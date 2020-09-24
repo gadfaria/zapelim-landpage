@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import Input from "../elements/Input";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 const propTypes = {
   ...SectionProps.types,
@@ -41,6 +42,9 @@ const Cta = ({
     split && "cta-split"
   );
 
+  const url =
+    "https://ngrok.us2.list-manage.com/subscribe/post?u=1e4ad449ea239e9c0373e14e3&amp;id=e417e3c75b";
+
   return (
     <section {...props} className={outerClasses}>
       <div className="container">
@@ -50,7 +54,8 @@ const Cta = ({
               Entre em contato com a gente
             </h3>
           </div>
-          <div className="cta-action" >
+          <MailchimpSubscribe url={url} />
+          <div className="cta-action">
             <Input
               id="newsletter"
               type="email"
@@ -58,7 +63,6 @@ const Cta = ({
               labelHidden
               hasIcon="right"
               placeholder="Digite aqui seu email"
-              
             >
               <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
                 <path
