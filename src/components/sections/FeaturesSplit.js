@@ -28,7 +28,7 @@ const FeaturesSplit = ({
 }) => {
   const outerClasses = classNames(
     "features-split section",
-    topOuterDivider && "has-top-divider",
+    // topOuterDivider && "has-top-divider",
     bottomOuterDivider && "has-bottom-divider",
     hasBgColor && "has-bg-color",
     invertColor && "invert-color",
@@ -37,7 +37,7 @@ const FeaturesSplit = ({
 
   const innerClasses = classNames(
     "features-split-inner section-inner",
-    topDivider && "has-top-divider",
+    // topDivider && "has-top-divider",
     bottomDivider && "has-bottom-divider"
   );
 
@@ -55,34 +55,85 @@ const FeaturesSplit = ({
 
   return (
     <section {...props} className={outerClasses}>
-      <div className="container">
+      <div className="container" style={{ marginTop: "-200px" }}>
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
+          {/* <SectionHeader data={sectionHeader} className="center-content" /> */}
           <div className={splitClasses}>
+            <div className="split-item"> </div>
             <div className="split-item">
               <div
                 className="split-item-content center-content-mobile reveal-from-left"
-                data-reveal-container=".split-item"
+                // data-reveal-container=".split-item"
+                data-reveal-delay="600"
               >
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                {/* <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   CHATBOT
-                </div>
-                <h3 className="mt-0 mb-12">O que é um chatbot?</h3>
-                <p className="m-0">
-                  Chatbot é um software que simula uma conversa humana,
-                  gerenciando as trocas de mensagens entre o cliente e o
-                  colaborador.
+                </div> */}
+                <h3 className="mt-0 mb-12">Com Zapelim, você vende mais.</h3>
+                <p className="m-0" style={{ display: "flex" }}>
+                  <Image
+                    src={require("./../../assets/images/check.svg")}
+                    alt="Open"
+                    width={30}
+                    height={30}
+                  />
+                  <div style={{ marginLeft: "8px" }}>
+                    0% de taxa por pedido.
+                  </div>
                 </p>
+                <p className="m-0" style={{ display: "flex" }}>
+                  <Image
+                    src={require("./../../assets/images/check.svg")}
+                    alt="Open"
+                    width={30}
+                    height={30}
+                  />
+                  <div style={{ marginLeft: "8px" }}>
+                    Gerencie e acompanhe seus pedidos.
+                  </div>
+                </p>
+                <p className="m-0" style={{ display: "flex" }}>
+                  <Image
+                    src={require("./../../assets/images/check.svg")}
+                    alt="Open"
+                    width={30}
+                    height={30}
+                  />
+                  <div style={{ marginLeft: "8px" }}>
+                    100% dos seus clientes atendidos na hora.
+                  </div>
+                </p>
+
+                <h5
+                  className="m-0"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    marginTop: "15px",
+                  }}
+                >
+                  <Image
+                    src={require("./../../assets/images/phone.svg")}
+                    alt="Open"
+                    width={30}
+                    height={30}
+                  />
+                  <div style={{ marginLeft: "8px" }}>
+                    Também quero experimentar
+                  </div>
+                </h5>
               </div>
               <div
                 className={classNames(
                   "split-item-image center-content-mobile reveal-from-bottom",
                   imageFill && "split-item-image-fill"
                 )}
-                data-reveal-container=".split-item"
+                // data-reveal-container=".split-item"
+                data-reveal-delay="800"
               >
                 <Image
-                  src={require("./../../assets/images/imagetop.svg")}
+                  src={require("./../../assets/images/whats-fake.svg")}
                   alt="Features split 01"
                   width={528}
                   height={396}
@@ -90,7 +141,7 @@ const FeaturesSplit = ({
               </div>
             </div>
 
-            <div className="split-item">
+            {/* <div className="split-item">
               <div
                 className="split-item-content center-content-mobile reveal-from-right"
                 data-reveal-container=".split-item"
@@ -146,7 +197,7 @@ const FeaturesSplit = ({
                   height={396}
                 />
               </div>
-            </div>
+            </div> */}
 
             {/* <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">

@@ -54,35 +54,30 @@ const Hero = ({
     <section {...props} className={outerClasses}>
       <div className="container-sm">
         <div className={innerClasses}>
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
+          <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
+            <Image
+              src={require("./../../assets/images/zapelim.png")}
+              alt="Open"
+              width={60}
+              height={60}
+            />
+            <span>Zap</span>
+            <span className="text-color-primary">elim</span>
+          </h1>
+          <div className="container-xs">
+            <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
+              Seu robô de vendas para WhatsApp.
+            </p>
+          </div>
+          {/* <div style={{ display: "flex", justifyContent: "space-between" }}>
             <div className="hero-content">
-              <h1
-                className="mt-0 mb-16 reveal-from-bottom"
-                data-reveal-delay="200"
-              >
-                <Image
-                  src={require("./../../assets/images/zapelim.png")}
-                  alt="Open"
-                  width={60}
-                  height={60}
-                />
-                <span>Zap</span>
-                <span className="text-color-primary">elim</span>
-              </h1>
-              <div className="container-xs">
-                <p
-                  className="m-0 mb-32 reveal-from-bottom"
-                  data-reveal-delay="400"
-                >
-                  Seu robô de vendas para WhatsApp.
-                </p>
-              </div>
+             
               <div
                 className="mt-0 mb-16 reveal-from-bottom"
                 data-reveal-delay="600"
               >
                 <Image
-                  src={require("./../../assets/images/maozinha123.png")}
+                  src={require("./../../assets/images/whats-fake.svg")}
                   alt="Features split 01"
                   width={400}
                   height={400}
@@ -98,8 +93,8 @@ const Hero = ({
                   backgroundImage: `url(${Fundo})`,
                   display: "flex",
                   flexDirection: "column",
-                  marginTop: "180px",
-                  // height: "520px"
+                  // marginTop: "180px",
+                  // height: "100%"
                 }}
               >
                 <h4
@@ -134,7 +129,7 @@ const Hero = ({
                     alt="Open"
                     width={30}
                     height={30}
-                  />{" "}
+                  />
                   <span style={{ marginLeft: "8px" }}>
                     Gerencie e acompanhe seus pedidos.
                   </span>
@@ -182,8 +177,8 @@ const Hero = ({
                   </span>
                 </div>
               </div>
-            </div>
-          </div>
+            </div> 
+          </div>*/}
         </div>
       </div>
     </section>
