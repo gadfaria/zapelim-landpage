@@ -54,7 +54,7 @@ const Cta = ({
               Entre em contato com a gente
             </h3>
           </div>
-          <MailchimpSubscribe url={url} />
+          {/* <MailchimpSubscribe url={url} /> */}
           <div className="cta-action">
             <Input
               id="newsletter"
